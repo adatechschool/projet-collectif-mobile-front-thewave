@@ -2,12 +2,9 @@
 
 package com.example.thewaveapp.ui
 
-data class SurfSpot (
-    val offset: String,
-    val records: List<Record>
-)
 
-data class Record (
+
+data class SurfSpot (
     val createdTime: String,
     val id: String,
     val fields: Fields

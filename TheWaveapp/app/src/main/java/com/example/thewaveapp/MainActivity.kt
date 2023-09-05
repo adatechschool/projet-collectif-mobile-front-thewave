@@ -47,7 +47,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 )
                 {
-                    SurfSpotApp()
+                    SurfSpotApp(id = 1)
 
 
                 }

@@ -3,10 +3,12 @@ package com.example.thewaveapp.ui
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -27,27 +29,38 @@ fun Welcome(
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Image(
-            painter = painterResource(R.drawable.wavelogo1),
+            painter = painterResource(R.drawable.wavelogo3),
             contentDescription = "logo"
         )
-        Text(
-            text = "The Wave"
-        )
-
-    Button(
-        onClick = onClick,
-        modifier = Modifier
-            .widthIn(min = 250.dp)
-    ) {
+        Row(
+            modifier = Modifier
+                .padding(16.dp),
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = "The Wave",
+                style = MaterialTheme.typography.headlineLarge,
+            )
+        }
+        Button(
+            onClick = onClick,
+            modifier = Modifier
+                .widthIn(min = 250.dp)
+        ) {
             Text(text = "Welcome to The Wave")
-    }
+        }
+
+
 }}
 
 @Preview
 @Composable
 fun WelcomePreview() {
     Welcome(
-        modifier = Modifier.fillMaxSize().padding(16.dp),
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
         onClick = {}
     )
 }

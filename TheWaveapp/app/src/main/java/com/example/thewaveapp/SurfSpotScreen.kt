@@ -15,10 +15,9 @@ fun SurfSpotAppBar() {
 
 @Composable
 fun SurfSpotApp(
-    id: Int,
-    modifier: Modifier = Modifier,
-    surfSpot: SurfSpot = SurfSpot(offset = , records = )
+    id: String,
 ) {
 
 
 }
+
