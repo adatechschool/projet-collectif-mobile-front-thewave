@@ -4,7 +4,9 @@ import androidx.compose.material3.Text
 
 // Composable function that displays one Spot screen with Name, description, location and image
 @Composable
-fun TheSpotScreen() {
+fun TheSpotScreen(
+    id: String = null,
+) {
     Column {
         Text(text = "The Spot")
         Text(text = "Description")

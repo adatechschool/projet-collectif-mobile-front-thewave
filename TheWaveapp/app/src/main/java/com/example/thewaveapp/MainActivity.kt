@@ -45,8 +45,9 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting(spotName = "Fonteau", spotPlace = "Spot de surf")
+                )
+                {
+                    SurfSpotApp()
 
 
                 }

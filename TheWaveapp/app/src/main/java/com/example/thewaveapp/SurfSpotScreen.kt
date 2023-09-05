@@ -2,6 +2,7 @@ package com.example.thewaveapp
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import com.example.thewaveapp.ui.SurfSpot
 
 
 /*@Composable
@@ -14,9 +15,10 @@ fun SurfSpotAppBar() {
 
 @Composable
 fun SurfSpotApp(
+    id: Int,
     modifier: Modifier = Modifier,
-    viewModel: OrderViewModel = viewModel()
+    surfSpot: SurfSpot = SurfSpot(offset = , records = )
 ) {
-    val navController = rememberNavController()
+
 
 }
